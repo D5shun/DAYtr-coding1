@@ -1,0 +1,996 @@
+@charset "UTF-8";
+* {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.navbar__list li a, .footer__nav-list li a, .section__heading a, .news__heading time, #news a, .price__table tr th, .copyright small {
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.inner-color {
+  background: #EFEFEF;
+}
+
+section {
+  padding: 70px 0;
+}
+
+.section__heading {
+  font-size: 6.0rem;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.section__heading a {
+  color: #333;
+}
+
+.section__heading a::before {
+  content: '';
+  display: inline-block;
+  width: 70px;
+  height: 5px;
+  background-color: #3F51B5;
+  position: absolute;
+  transform: translateX(60%);
+  bottom: -40%;
+}
+
+h4 {
+  font-size: 2.0rem;
+}
+
+/*-----　header　-----*/
+.navbar {
+  background-color: #3F51B5;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  font-size: 1.6rem;
+  justify-content: space-between;
+}
+
+.navbar__logo {
+  width: 200px;
+  height: 39px;
+  margin-left: 140px;
+}
+
+.navbar__list {
+  display: flex;
+  margin-right: 120px;
+}
+
+.navbar__list li {
+  margin-left: 30px;
+}
+
+.navbar__list li:first-of-type {
+  margin-left: 70px;
+}
+
+.navbar__list li a {
+  transition: 0.15s;
+  color: #fff;
+}
+
+.navbar__list li a:hover {
+  border-bottom: 3px solid #E81919;
+}
+
+.current {
+  border-bottom: 3px solid #E81919;
+}
+
+.hiraku-open-btn {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .hiraku-open-btn {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+}
+
+.offcanvas-right ul li {
+  padding: 15px 0 15px 20px;
+  font-size: 16px;
+  border-bottom: 1px dotted #707070;
+  position: relative;
+}
+
+.offcanvas-right ul li a {
+  color: #707070;
+}
+
+.offcanvas-right ul li a .arrow {
+  position: absolute;
+  right: 21px;
+  top: 21px;
+}
+
+.swiper-container {
+  position: relative;
+}
+
+div.mainvisual {
+  position: absolute;
+  top: 56%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-weight: bold;
+  width: 100%;
+  z-index: 1;
+}
+
+.mainvisual__heading {
+  font-size: 68px;
+}
+
+.mainvisual__text, .mainvisual__btn {
+  font-size: 38px;
+}
+
+.mainvisual__btn {
+  background-color: #3F51B5;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  width: 390px;
+  font-weight: bold;
+  margin-top: 80px;
+  box-shadow: 0 3px 6px #d6d6d6;
+  transition: all 0.3s ease;
+}
+
+.mainvisual__btn a {
+  color: #fff;
+  padding: 12px 65px;
+}
+
+.mainvisual__btn:hover {
+  opacity: 0.7;
+  transform: translateY(1px);
+  box-shadow: 0 0 1px #d6d6d6;
+}
+
+/*-----　スライダー　-----*/
+div.swiper-slide img {
+  width: 100%;
+  min-height: 100vh;
+  object-fit: cover;
+  vertical-align: bottom;
+}
+
+.swiper-button-prev {
+  width: 75px;
+  height: 75px;
+  background: url(../images/arrow-prev.svg);
+}
+
+.swiper-button-prev:hover {
+  opacity: 0.7;
+}
+
+.swiper-button-prev::after {
+  display: none;
+}
+
+.swiper-button-next {
+  width: 75px;
+  height: 75px;
+  background: url(../images/arrow-next.svg);
+}
+
+.swiper-button-next:hover {
+  opacity: 0.7;
+}
+
+.swiper-button-next::after {
+  display: none;
+}
+
+.swiper-pagination-bullet {
+  width: 16px;
+  height: 16px;
+}
+
+/*-----　Card　-----*/
+#card {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.card__list {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card__item {
+  margin: 0 auto;
+  width: 340px;
+  background-color: #fff;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  padding: 16px 16px 28px;
+}
+
+.card__item img {
+  width: 310px;
+}
+
+.card__item h4 {
+  margin-top: 26px;
+}
+
+.card__item p {
+  margin-top: 20px;
+}
+
+/*-----　News　-----*/
+#news {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.news__list {
+  margin-top: 100px;
+}
+
+.news__item {
+  padding: 15px 10px;
+  display: flex;
+  align-items: center;
+}
+
+.news__item:not(:last-child) {
+  border-bottom: 1px solid #707070;
+}
+
+.news__item:nth-of-type(2) a {
+  background-color: #3F51B5;
+}
+
+.news__item:nth-of-type(3) a {
+  background-color: #E81919;
+}
+
+.news__item a {
+  transition: all 0.2s ease;
+}
+
+.news__item a:hover {
+  opacity: 0.6;
+}
+
+.news__heading {
+  white-space: nowrap;
+  margin-right: 1.1em;
+}
+
+.news__heading a {
+  white-space: nowrap;
+  color: #fff;
+  margin-left: 1.1em;
+  padding: 5px 20px;
+  background-color: #666;
+  border-radius: 6px;
+}
+
+#news > a {
+  margin-top: 20px;
+  color: #E81919;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+}
+
+#news > a:hover {
+  opacity: 0.5;
+}
+
+#news > a i {
+  color: #E81919;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+/*-----　Price　-----*/
+#price {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.price__box {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.price__image {
+  background: url("../images/price-img.png") center center/cover no-repeat;
+  width: 360px;
+  height: 300px;
+  margin-right: 30px;
+}
+
+.price__table {
+  width: 650px;
+  border-collapse: collapse;
+}
+
+.price__table caption {
+  caption-side: bottom;
+  text-align: start;
+  margin-top: 30px;
+}
+
+.price__table caption span {
+  border-bottom: 1px solid #707070;
+}
+
+.price__table caption span:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.price__table th, .price__table td {
+  border: 1px solid #707070;
+  padding: 10px;
+}
+
+.price__table th {
+  width: 20%;
+  background: #999;
+  color: #fff;
+}
+
+.price__table td {
+  width: 30%;
+  background: #fff;
+  text-align: right;
+}
+
+.price__table td span {
+  color: #E81919;
+}
+
+/*-----　Access　-----*/
+#access {
+  width: 60%;
+  margin: 0 auto;
+}
+
+#access .section__heading a::before {
+  transform: translateX(100%);
+}
+
+div.iframe-wrap {
+  margin-top: 100px;
+}
+
+div.iframe-wrap iframe {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+.access__table {
+  margin: 20px 30px 40px 40px;
+}
+
+.access__table tr td:nth-of-type(2) {
+  padding-left: 50px;
+}
+
+.access__btn {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  background: #3F51B5;
+  padding: 13px 40px 13px 40px;
+  border-radius: 10px;
+  position: relative;
+  width: 300px;
+  transition: all 0.2s ease;
+}
+
+.access__btn i {
+  position: absolute;
+  top: 25%;
+  right: 5%;
+  font-size: 1.2em;
+}
+
+.access__btn:hover {
+  opacity: 0.7;
+}
+
+/*-----　Q&A　-----*/
+#qa {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.qa__list {
+  padding-top: 100px;
+}
+
+.qa__list li + li {
+  margin-top: 30px;
+}
+
+.qa__list li {
+  border: 1px solid #3F51B5;
+  font-size: 18px;
+}
+
+.qa__list li div.question {
+  cursor: pointer;
+  color: white;
+  background-color: #3F51B5;
+}
+
+.qa__list li div.answer {
+  background-color: #fff;
+  display: none;
+  overflow: hidden;
+}
+
+.qa__list li div.answer span {
+  float: left;
+}
+
+.qa__list li div.answer p {
+  margin-left: 35px;
+  margin-right: 30px;
+}
+
+.qa__list li div {
+  display: flex;
+  padding: 20px;
+}
+
+.qa__list li div span {
+  font-weight: bold;
+  padding-right: 20px;
+}
+
+.qa__list li div p {
+  font-weight: normal;
+  flex-grow: 1;
+}
+
+.qa__list li div i {
+  font-size: 25px;
+  padding-left: 20px;
+}
+
+/*-----　Contact　-----*/
+#contact {
+  width: 60%;
+  margin: 0 auto;
+}
+
+#contact .section__heading a::before {
+  transform: translateX(120%);
+}
+
+#contact form {
+  font-size: 18px;
+  background-color: #fff;
+  margin-top: 100px;
+  padding: 50px;
+}
+
+#contact form textarea {
+  resize: none;
+}
+
+#contact form .form__name, #contact form .form__mail, #contact form .form__subject, #contact form .form__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+#contact form .form__name label, #contact form .form__mail label, #contact form .form__subject label, #contact form .form__content label {
+  margin-top: 10px;
+  font-weight: bold;
+  white-space: nowrap;
+  width: 170px;
+  flex-shrink: 0;
+}
+
+#contact form .form__subject select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url(../images/select-arrow.svg) right 15px center/20px 20px no-repeat;
+}
+
+#contact form .form__subject select::-ms-expand {
+  display: none;
+}
+
+#contact form .form__subject select option {
+  font-size: 18px;
+  color: #aaa;
+  position: relative;
+}
+
+#contact form .form__subject select option::after {
+  position: absolute;
+  content: '';
+  background: url("../images/select-arrow.svg");
+}
+
+#contact form .form__radio {
+  min-width: 400px;
+}
+
+#contact form .form__radio input {
+  display: none;
+}
+
+#contact form .form__radio label {
+  position: relative;
+  margin-right: 30px;
+  padding-left: 40px;
+  white-space: nowrap;
+}
+
+#contact form .form__radio label::before {
+  position: absolute;
+  top: -5px;
+  left: 0;
+  content: '';
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #707070;
+  border-radius: 50%;
+}
+
+#contact form .form__radio input:checked + label::after {
+  position: absolute;
+  top: 1px;
+  left: 6px;
+  content: '';
+  display: block;
+  width: 18px;
+  height: 18px;
+  background-color: #3F51B5;
+  border-radius: 50%;
+}
+
+#contact form .form__privacy {
+  display: flex;
+  justify-content: center;
+}
+
+#contact form .form__privacy input {
+  display: none;
+}
+
+#contact form .form__privacy label {
+  position: relative;
+  padding-left: 40px;
+}
+
+#contact form .form__privacy label::before {
+  position: absolute;
+  top: -5px;
+  left: 0;
+  content: '';
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #707070;
+}
+
+#contact form .form__privacy input:checked + label::after {
+  position: absolute;
+  top: 0;
+  left: 2px;
+  content: url("../images/check.svg");
+}
+
+#contact form div + div {
+  margin-top: 50px;
+}
+
+#contact form ::placeholder {
+  font-size: 18px;
+}
+
+#contact form .form__name input, #contact form .form__mail input, #contact form select, #contact form textarea {
+  padding: 10px;
+  width: 100%;
+  font-size: 100%;
+  border: 1px solid #aaa;
+}
+
+#contact form label span {
+  border-bottom: 1px solid #333;
+}
+
+#contact form textarea {
+  display: inline-block;
+  height: 220px;
+}
+
+#contact form .form__btn {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  background: #3F51B5;
+  padding: 13px 40px 13px 40px;
+  border-radius: 10px;
+  position: relative;
+  width: 250px;
+  margin-top: 30px;
+  font-size: 22px;
+  transition: all 0.2s ease;
+}
+
+#contact form .form__btn i {
+  position: absolute;
+  top: 25%;
+  right: 5%;
+  font-size: 1.2em;
+}
+
+#contact form .form__btn:hover {
+  opacity: 0.7;
+}
+
+#contact form .form__radio, #contact form .form__privacy {
+  font-size: 16px;
+}
+
+#contact form .form__privacy a {
+  color: #333;
+  border-bottom: 1px solid #333;
+  transition: 0.15s;
+}
+
+#contact form .form__privacy a:hover {
+  opacity: 0.5;
+}
+
+/*-----　footer　-----*/
+.l-footer {
+  position: relative;
+  padding: 0 150px;
+  width: 100%;
+  height: 340px;
+  background: linear-gradient(#666666 0%, #333333 100%);
+}
+
+.l-footer p, .l-footer a {
+  color: #fff;
+}
+
+.footer__nav {
+  padding-top: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__nav p, .footer__nav a {
+  font-size: 16px;
+}
+
+.footer__nav .footer__nav-list, .footer__nav .footer__sns-list {
+  display: flex;
+}
+
+.footer__nav .footer__company-info .footer__address {
+  margin-top: 30px;
+  line-height: 1.8em;
+}
+
+.footer__nav .footer__nav-list {
+  width: 100%;
+  margin: 7px 100px 0;
+}
+
+.footer__nav .footer__nav-list li {
+  margin-right: 30px;
+}
+
+.footer__nav .footer__nav-list li a:hover {
+  border-bottom: 1px solid #fff;
+}
+
+.footer__nav .footer__sns-list li {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 15px;
+  text-align: center;
+  position: relative;
+}
+
+.footer__nav .footer__sns-list li a {
+  position: absolute;
+  padding: 2px;
+  left: 6px;
+  top: 2px;
+}
+
+.footer__nav .footer__sns-list li:first-of-type {
+  background: #55ACEE;
+}
+
+.footer__nav .footer__sns-list li:nth-of-type(2) {
+  background: #3B5998;
+}
+
+.footer__nav .footer__sns-list li:last-of-type {
+  background: #D93177;
+}
+
+.copyright {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+}
+
+/*-----　先頭へ戻るボタン　-----*/
+#pageTop {
+  z-index: 1;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+}
+
+#pageTop a {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  width: 60px;
+  height: 60px;
+  font-size: 35px;
+  color: #fff;
+  background: #3F51B5;
+  transition: all 0.2s ease;
+}
+
+#pageTop a i {
+  margin-top: 12px;
+}
+
+#pageTop a:hover {
+  opacity: 0.7;
+}
+
+/*-----　モーダル　-----*/
+.modal {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 2;
+  display: none;
+}
+
+.modal__bg {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100vh;
+  width: 100%;
+}
+
+.modal__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #fff;
+  padding: 40px 40px 20px;
+  width: 60%;
+  transform: translate(-50%, -50%);
+}
+
+.modal__content button {
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  background-color: #3F51B5;
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+.modal__content button:hover {
+  opacity: 0.7;
+}
+
+.modal__content h3 {
+  font-size: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.modal__content h3::before {
+  content: '';
+  display: inline-block;
+  background-color: #3F51B5;
+  width: 135px;
+  height: 2px;
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.modal__content ul {
+  padding-top: 40px;
+}
+
+.modal__content ul li {
+  margin-bottom: 30px;
+}
+
+.modal__content ul li h4 {
+  font-size: 18px;
+  padding-left: 1.1em;
+  position: relative;
+}
+
+.modal__content ul li h4:before {
+  position: absolute;
+  left: -8px;
+  top: 14px;
+  content: '';
+  display: inline-block;
+  background-color: #3F51B5;
+  height: 3px;
+  width: 18px;
+  transform: rotate(90deg);
+}
+
+.modal__content ul li p {
+  margin-top: 10px;
+  margin-left: 20px;
+  padding-bottom: 00px;
+}
+
+.modal__content a {
+  color: #fff;
+  background-color: #3F51B5;
+  box-shadow: 0px 3px 3px #ccc;
+  border-radius: 12px;
+  width: 180px;
+  height: 36px;
+  padding-top: 5px;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  transition: 0.15s;
+}
+
+.modal__content a:hover {
+  opacity: 0.7;
+}
+
+/*-----　MediaQuery　-----*/
+@media screen and (max-width: 767px) {
+  /*-----　header 　----*/
+  .navbar {
+    height: 60px;
+  }
+  .navbar__logo {
+    margin-left: 20px;
+  }
+  .navbar__list .item {
+    display: none;
+  }
+  .swiper-container {
+    width: 100%;
+  }
+  .swiper-container .swiper-slide img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+  .swiper-container div.swiper-button-next {
+    left: 410px;
+  }
+  .swiper-container div.swiper-pagination {
+    width: 85vh;
+  }
+  .swiper-container .swiper-pagination {
+    width: 64vh;
+  }
+  div.mainvisual {
+    position: absolute;
+    top: 55%;
+    left: 25%;
+  }
+  div.mainvisual .mainvisual__heading {
+    font-size: 34px;
+  }
+  div.mainvisual .mainvisual__text, div.mainvisual .mainvisual__btn {
+    font-size: 16px;
+  }
+  div.mainvisual .mainvisual__btn {
+    width: 250px;
+  }
+  /*-----　main　-----*/
+  #card, #news, #price, #access, #contact, #qa {
+    width: 100vw;
+    margin: 0;
+  }
+  .price__box {
+    display: block;
+  }
+  .price__box .price__image {
+    margin: 0 auto;
+  }
+  .price__box .price__table {
+    width: 60vh;
+    margin: 30px auto 0;
+  }
+  #contact .form__name, #contact .form__mail, #contact .form__subject, #contact .form__content {
+    flex-wrap: wrap;
+  }
+  /*-----　footer　-----*/
+  .l-footer {
+    height: 100%;
+  }
+  .footer__nav {
+    flex-direction: column;
+    padding-bottom: 80px;
+  }
+  .footer__nav .footer__nav-list {
+    margin: 7px 0 0;
+    flex-direction: column;
+  }
+  .footer__nav .footer__sns-list {
+    margin-top: 15px;
+  }
+  .copyright {
+    left: 28%;
+  }
+  /*-----　スライダー機能　-----*/
+  .swiper-button-prev {
+    left: 10px;
+    background-size: 80%;
+    background-repeat: no-repeat;
+  }
+  .swiper-button-next {
+    right: 10px;
+    background-size: 80%;
+    background-repeat: no-repeat;
+  }
+}

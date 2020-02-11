@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+/* ----- reset.css ----- */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    vertical-align:baseline;
+}
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+/* ----- custom_reset ----- */
+
+html {
+      /* フォントサイズの計算に1rem=10pxを使いたいのでhtmlに62.5%を指定 */
+    font-size: 62.5%;
+  }
+
+body {
+      /* どんなにブラウザ幅が狭くなっても最低1,000pxのコンテンツの幅を確保する */
+    min-width: 1000px;
+    font-family: "Yu Gothic";
+    line-height: 1.5;
+    color: #333;
+    font-size: 1.3rem;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* ボールド書体についてはEdgeに対応するため別途指定する */
+strong, b, mark, b, .typo-bold {
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    font-weight: 700;
+}
+
+
+img {
+  /* 指定しておかないと画像の下に微妙な隙間ができてしまうことがある */  
+  vertical-align: bottom;
+}
+
+ol, ul {
+  list-style: none;
+}
+/* リンクに標準で付与される下線をなくす */
+a {
+  text-decoration: none;
+}
+
+
+/* 以下はフォームで使用するパーツに関わるリセット */
+input {
+  outline: none;
+}
+
+textarea {
+  display: block;
+  outline: none;
+}
+
+button, select {
+  background-color: transparent;
+  outline: none;
+}

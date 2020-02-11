@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>デイトラ2nd</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Noto+Sans+JP:400,700&display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/hiraku.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/my_custom.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="l-header">
+
+    <nav class="navbar">
+        <h1 class="navbar__logo"><img src="images/logo.png" alt="企業ロゴ"></h1>
+
+        <button class="hiraku-open-btn" id="offcanvas-btn-right" data-toggle-offcanvas="#js-hiraku-offcanvas-1">
+            <span class="hiraku-open-btn-line"></span>
+        </button>
+
+        <ul class="navbar__list">
+            <li class="item"><a href="#card">Card</a></li>
+            <li class="item"><a href="#news">News</a></li>
+            <li class="item"><a href="#price">Price</a></li>
+            <li class="item"><a href="#access">Access</a></li>
+            <li class="item"><a href="#content">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- ドロワーメニュー -->
+    <nav class="offcanvas-right">
+        <ul>
+          <li><a href="#card">Card<img src="images/arrow-b.svg" class="arrow"></a></li>
+          <li><a href="#news">News<img src="images/arrow-b.svg" class="arrow"></a></li>
+          <li><a href="#price">Price<img src="images/arrow-b.svg" class="arrow"></a></li>
+          <li><a href="#access">Access<img src="images/arrow-b.svg" class="arrow"></a></li>
+          <li><a href="#contact">Contact<img src="images/arrow-b.svg" class="arrow"></a></li>
+        </ul>
+      </nav>
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="images/mainvisual.png" alt=""></div>
+          <div class="swiper-slide"><img src="images/mainvisual.png" alt=""></div>
+          <div class="swiper-slide"><img src="images/mainvisual.png" alt=""></div>
+          <div class="swiper-slide"><img src="images/mainvisual.png" alt=""></div>
+          <div class="swiper-slide"><img src="images/mainvisual.png" alt=""></div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-pagination"></div>
+
+        <div class="mainvisual">
+          <h2 class="mainvisual__heading wow fadeInUp">一番伝えたいことを書く</h2>
+          <p class="mainvisual__text wow fadeInUp">リードリードリード</p>
+          <button class="mainvisual__btn wow fadeInUp"><a href="#contact">お問い合わせ</a></button>
+        </div>
+    </div>
+
+</header>
+
+<main>
+    <div class="inner-color">
+        <section id="card">
+            <h3 class="section__heading wow fadeInUp"><a href="#">Card</a></h3>
+            <ul class="card__list">
+                <li class="card__item wow fadeInUp">
+                    <img src="images/card-img.svg" alt="カードイメージ">
+                    <h4>タイトルタイトル</h4>
+                    <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                </li>
+                <li class="card__item wow fadeInUp">
+                    <img src="images/card-img.svg" alt="カードイメージ">
+                    <h4>タイトルタイトル</h4>
+                    <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                </li>
+                <li class="card__item wow fadeInUp">
+                    <img src="images/card-img.svg" alt="カードイメージ">
+                    <h4>タイトルタイトル</h4>
+                    <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                </li>
+                <li class="card__item wow fadeInUp">
+                    <img src="images/card-img.svg" alt="カードイメージ">
+                    <h4>タイトルタイトル</h4>
+                    <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                </li>
+                <li class="card__item wow fadeInUp">
+                    <img src="images/card-img.svg" alt="カードイメージ">
+                    <h4>タイトルタイトル</h4>
+                    <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                </li>
+                <li class="card__item wow fadeInUp">
+                    <img src="images/card-img.svg" alt="カードイメージ">
+                    <h4>タイトルタイトル</h4>
+                    <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                </li>
+            </ul>
+        </section>
+    </div>
+
+    <section id="news">
+        <h3 class="section__heading wow fadeInUp"><a href="#">News</a></h3>
+        <ul class="news__list wow fadeInUp">
+            <li class="news__item">
+                <p class="news__heading"><time datetime=">2019-01-30">2019-01-30</time><a href="#">ラベル1</a></p>
+                <p class="news__text">ニュースニュースニュースニュースニュースニュースニュースニュースニュース</p>
+            </li>
+            <li class="news__item">
+                <p class="news__heading"><time datetime=">2019-01-30">2019-01-30</time><a href="#">ラベル2</a></p>
+                <p class="news__text">ニュースニュースニュースニュースニュースニュースニュースニュースニュース</p>
+            </li>
+            <li class="news__item">
+                <p class="news__heading"><time datetime=">2019-01-30">2019-01-30</time><a href="#">ラベル3</a></p>
+                <p class="news__text">ニュースニュースニュースニュースニュースニュースニュースニュースニュース</p>
+            </li>
+            <li class="news__item">
+                <p class="news__heading"><time datetime=">2019-01-30">2019-01-30</time><a href="#">ラベル1</a></p>
+                <p class="news__text">ニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュース</p>
+            </li>
+            <li class="news__item">
+                <p class="news__heading"><time datetime=">2019-01-30">2019-01-30</time><a href="#">ラベル1</a></p>
+                <p class="news__text">ニュースニュースニュースニュースニュースニュースニュースニュースニュース</p>
+            </li>
+        </ul>
+        <a href="#">more<i class="fa fa-angle-right"></i></a>
+    </section>
+
+    <div class="inner-color">
+        <section id="price">
+            <h3 class="section__heading wow fadeInUp"><a href="#">Price</a></h3>
+            <div class="price__box">
+                <div class="price__image wow fadeInUp"></div>
+                <table class="price__table wow fadeInUp">
+                    <caption>※ 目安なので詳しくは<span>お問い合わせ</span>ください。</caption>
+                    <tr>
+                        <th> </th>
+                        <th>column1</th>
+                        <th>column2</th>
+                    </tr>
+                    <tr>
+                        <th>row1</th>
+                        <td>100円</td>
+                        <td>100円</td>
+                    </tr>
+                    <tr>
+                        <th>row2</th>
+                        <td>6,000円</td>
+                        <td>0円</td>
+                    </tr>
+                    <tr>
+                        <th>row3</th>
+                        <td><span>6,000円</span><br>※ 今だけ半額</td>
+                        <td>0円</td>
+                    </tr>
+                    <tr>
+                        <th>row4</th>
+                        <td>100円</td>
+                        <td>100円</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    </div>
+    
+    <section id="access">
+        <h3 class="section__heading wow fadeInUp"><a href="#">Access</a></h3>
+        <div class="iframe-wrap">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61630.1180197893!2d139.70920685412037!3d35.725380314052515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188cd0d6b1ba1f%3A0x1c32a1f1ecacfdd5!2z5paw5a6_6aeF!5e0!3m2!1sja!2sjp!4v1580045486585!5m2!1sja!2sjp" width="800" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+        <table class="access__table wow fadeInUp">
+            <tr>
+                <td>住所</td>
+                <td>ほげほげほげのほげの場所</td>
+            </tr>
+            <tr>
+                <td>アクセス</td>
+                <td>〇〇駅から右に５分</td>
+            </tr>
+        </table>
+        <a href="#" class="access__btn wow fadeInUp">Googleマップで見る<i class="fa fa-angle-right"></i></a>
+    </section>
+
+    <div class="inner-color">
+        <section id="qa">
+            <h3 class="section__heading wow fadeInUp"><a href="#">Q & A</a></h3>
+
+            <ul class="qa__list">
+                <li>
+                    <div class="question">
+                        <span>Q</span>
+                        <p>クリックするとどうなりますか？</p>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="answer">
+                        <span>A</span>
+                        <p>アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="question">
+                        <span>Q</span>
+                        <p>クリックするとどうなりますか？</p>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="answer">
+                        <span>A</span>
+                        <p>アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="question">
+                        <span>Q</span>
+                        <p>クリックするとどうなりますか？</p>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="answer">
+                        <span>A</span>
+                        <p>アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="question">
+                        <span>Q</span>
+                        <p>クリックするとどうなりますか？</p>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="answer">
+                        <span>A</span>
+                        <p>アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </div>
+
+    <div class="inner-color">
+        <section id="contact">
+            <h3 class="section__heading wow fadeInUp"><a href="#">Contact</a></h3>
+            <form class="contact__form wow fadeInUp" action="">
+                <div class="form__name">
+                    <label for="name" >お名前</label>
+                    <input type="text" id="name" name="yourname" placeholder="山田太郎">
+                </div>
+                <div class="form__mail">
+                    <label for="mail">メールアドレス</label>
+                    <input type="email" id="mail" name="mail" placeholder="text@example.com">
+                </div>
+                <div class="form__subject">
+                    <label for="">お問い合わせ種別</label>
+                    <select id="" name="subject">
+                        <option value="opt0" hidden>－－－</option>
+                        <option value="opt1">あああ</option>
+                        <option value="opt2">あああ</option>
+                        <option value="opt3">あああ</option>
+                    </select>
+                </div>
+                <div class="form__content">
+                    <label for="content">お問い合わせ内容</label>
+                    <textarea id="content" name="content" placeholder="お問い合わせを入力してください"></textarea>
+                </div>
+                <div class="form__radio">
+                    <input type="radio" id="btn1" value="ラジオ1" name="radio">
+                    <label for="btn1">ラジオ1</label>
+                    <input type="radio" id="btn2" value="ラジオ2" name="radio">
+                    <label for="btn2">ラジオ2</label>
+                    <input type="radio" id="btn3" value="ラジオ3" name="radio">
+                    <label for="btn3">ラジオ3</label>
+                </div>
+                <div class="form__privacy">
+                    <input type="checkbox" id="privacy">
+                    <label for="privacy"><a href="#" class="js-modal-open">プライバシーポリシー</a>に合意する</label>
+                </div>  
+                <a href="#" class="form__btn">送信する<i class="fa fa-angle-right"></i></a>
+            </form>
+        </section>
+    </div>
+</main>
+
+<footer class="l-footer">
+    <nav class="footer__nav">
+        <div class="footer__company-info">
+            <h1 class="footer__logo"><img src="images/logo.png" alt="企業ロゴ"></h1>
+            <address class="footer__address" style="font-style: normal;">
+                <p>住所：ほげほげのほげほげ<br>TEL：0000-00-0000</p>
+            </address>
+        </div>
+        <ul class="footer__nav-list">
+            <li><a href="#card">Card</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#price">Price</a></li>
+            <li><a href="#access">Access</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <ul class="footer__sns-list">
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+        </ul>
+    </nav>
+    <p class="copyright"><small>Copyright © 2018 @haniwa008 All rights reserved.</small></p>
+</footer>
+
+<p id="pageTop"><a href="#"><i class="fa fa-chevron-up"></i></a></p>
+
+<!-- モーダル -->
+<div class="modal js-modal">
+    <div class="modal__bg js-modal-close"></div>
+    <div class="modal__content">
+        <button class="js-modal-close"><img src="images/btn-batsu.svg" alt=""></button>
+        <h3>プライバシーポリシー</h3>
+        <ul>
+            <li>
+                <h4>ほにゃらら</h4>
+                <p>ほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃらら。</p>
+            </li>
+            <li>
+                <h4>ほにゃらら</h4>
+                <p>ほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃらら。</p>
+            </li>
+        </ul>
+        <a class="js-modal-close" href="">閉じる</a>
+    </div>
+</div>
+<!-- <div id="modal-content">
+	<p>「閉じる」か「背景」をクリックするとモーダルウィンドウを終了します。</p>
+	<p><a id="js-modal-close" class="button-link">閉じる</a></p>
+</div> -->
+
+<script  src="https://code.jquery.com/jquery-3.4.1.min.js"  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="  crossorigin="anonymous"></script>
+<script src="js/swiper.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/hiraku.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
